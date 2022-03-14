@@ -1,0 +1,55 @@
+buildscript {
+    ext.kotlin_version = '1.6.10'
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.10"
+    }
+}
+
+plugins {
+    id 'org.jetbrains.kotlin.plugin.serialization' version '1.6.10'
+    id 'org.jetbrains.kotlin.jvm' version '1.6.10'
+    id 'org.openjfx.javafxplugin' version '0.0.10'
+    id 'application'
+}
+
+apply plugin: 'java'
+apply plugin: 'kotlin'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.6.10"
+    implementation 'com.google.cloud:google-cloud-speech:2.2.1'
+    implementation 'com.google.cloud:google-cloud-language:2.1.4'
+    implementation group: 'de.dfki.mary', name: 'voice-cmu-rms-hsmm', version: '5.2'
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2'
+    testImplementation 'org.jetbrains.kotlin:kotlin-test'
+    testImplementation 'org.jetbrains.kotlin:kotlin-test-junit'
+}
+
+application {
+    mainClass = 'NoteTakingApp'
+}
+
+javafx {
+    // JavaFX 17 requires Java JDK 16+
+    version = "17.0.1"
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.graphics', 'javafx.media']
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}

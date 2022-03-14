@@ -1,0 +1,219 @@
+CS398: Meeting Minutes
+*****************************************************************************
+
+Date: 12/JAN/2022
+Team: 108
+
+Present: Brian, Parth
+Absent: (Only two members at the time)
+
+Agenda: Deciding Target Group, Who to interview
+
+Notes: We might want our target group to be old people
+
+Decisions: 
+
+Todo: Needs to find a new teammate
+
+*****************************************************************************
+
+Date: 14/JAN/2022
+Team: 108
+
+Present: Brian, Parth, Sam, Ross
+Absent: 
+
+Agenda: Deciding Target Group, Who to interview
+
+Notes: We came up with interesting features to implement, like having tags, text-to-speech, code integration (for pseudo code, possibly for actual codes), editing system similar to git where we can have multiple versions of notes. A special template for UML diagram. 
+
+Decisions: We decided our target group to be CS students (STEM Fields)
+
+Todo: We will have more ideas next Monday and discuss it. 
+
+*****************************************************************************
+
+Date: 17/JAN/2022
+Team: 108
+
+Present: Brian, Parth, Sam, Ross
+Absent: 
+
+Agenda: 
+
+Assigning Sam for Introduction
+Assigning Ross for Project Plan
+Assigning Brian for Requirements
+Assigning Parth for Architecutre & Design
+
+Notes: We discussed what should be on our project, and start working on it. We also decided to work on the design analysis demo and polish it this wednesday.
+
+Decisions: We decided to include all the feauters that we discussed in last meeting for now.
+
+Todo: Work on slides for design demo next friday
+
+*****************************************************************************
+
+Date: 19/JAN/2022
+Team: 108
+
+Present: Brian, Parth, Sam, Ross
+Absent: 
+Agenda: 
+
+We decided our architecture to be monolithic
+We will rehearse the design analysis demo
+
+Notes: We reassigned what parts of the project to cover in the demo.
+
+Sam : Introduction, Text-to-speech
+Ross: Plan, tags
+Brian: Git integration, UML diagram
+Parth: Architecture, Code integration
+Design (TBD)
+
+Decisions: 
+Todo: 
+
+*****************************************************************************
+
+Date: 21/JAN/2022
+Team: 108
+
+Present: Brian, Parth, Sam, Ross
+Absent: 
+Agenda: 
+
+We revised the design analysis slide
+
+Notes: 
+
+Decisions: We will do a mock presentation next monday
+
+Todo: 
+
+*****************************************************************************
+
+Date: 24/JAN/2022
+Team: 108
+
+Present: Brian, Parth, Sam, Ross
+Absent: 
+Agenda: 
+
+We rehearsed design review.
+
+Notes: 
+
+Polish the slides
+
+Parth will do sketch.
+Sam will do Target Users
+
+We will say "next slide" to indicate to move on to the next slide
+
+Decisions: 
+
+Todo: 
+
+*****************************************************************************
+
+Date: 26/JAN/2022
+Team: 108
+
+Present: Brian, Parth, Sam, Ross
+Absent: 
+Agenda: 
+
+We rehearsed design review.
+
+Notes: 
+
+Parth will do sketch.
+Brian might be able to provide the mock up (Not certain because of his flight on 27th of January)
+
+Decisions: 
+
+We decided that design patterns that will be used will be abstract factory and decorator desgin patterns.
+
+Todo: 
+
+*****************************************************************************
+
+Date: 31/JAN/2022
+Team: 108
+
+Present: Brian, Parth, Sam, Ross
+Absent: 
+Agenda: Sprint Goal Setup, UI Design, Find libraries.
+
+Notes: 
+Sprint0 Goal : 
+    UI Design (javaFX) -- complete
+    Libraries 
+    Sprint 1 Planning
+Sprint1 Goal :
+    Basic Requiremntts
+    Tags (kotline standard library)
+Sprint2 Goal :
+    Text-to-Speech (Google Cloud Speech)
+    UML Diagram (by insert/import images)
+Sprint3 Goal :
+    Code Integration (by insert/import images)
+    Git Integration (git)
+Decisions: 
+Todo: 
+
+*****************************************************************************
+
+Date: 2/FEB/2022
+Team 108:
+
+Present: Brian, Parth, Sam, Ross
+Absent:
+Agenda: Determining Libraries for key features
+Notes:
+Descision: Each teammember will find a library for each of the key features
+Todo:
+Brian should have a startUp Template
+
+*****************************************************************************
+
+Date: 4/FEB/2022
+Team: 108
+
+Present: Brian, Parth, Sam, Ross
+Absent: 
+Agenda: Determining Libraries for key features
+
+Notes: 
+    Speech to Text Libraries/APIs: 
+        - http://tyl.st/projects/voce/
+        - https://cloud.google.com/speech-to-text/docs/quickstart-client-libraries
+        - https://myandroid.site/kotlin-speech-to-text-example-step-by-step-example/
+        - https://developer.android.com/reference/android/speech/RecognizerIntent
+    
+    Markdown Libraries:
+        - https://developer.android.com/reference/android/speech/RecognizerIntent
+
+    Fonts:
+        - https://docs.oracle.com/javase/7/docs/api/java/awt/Font.html
+
+    Code Highlighting:
+        - http://hilite.me/
+
+Decisions: 
+Todo: Set up Kotlin Environment for each developer
+
+*****************************************************************************
+
+Date: 7/FEB/2022
+Team: 108
+
+Present: Brian, Parth, Sam, Ross
+Absent: 
+Agenda: 
+Notes: 
+    A Suggestion to switch from MVC to MVVM
+Decisions: 
+Todo: 
