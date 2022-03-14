@@ -72,8 +72,8 @@ class InitView(val model: Model) : BorderPane(), View {
         notes.children.clear()
         notes.children.add(addNote)
         for (note in model.notes) {
-            val extraNote = Note(note.title, note.tags!!, "")
-            val extra = NoteCellView(note.title, note.tags!!, "");
+            val extraNote = model.fetch(note.id)!!
+            val extra = NoteCellView(note.title, note.tags!!, note!!.content);
             extra.setOnMouseClicked {
                 val secondaryStage = Stage()
                 secondaryStage.scene = Scene(AddEditNoteView(secondaryStage, model, extraNote, false))
@@ -84,7 +84,6 @@ class InitView(val model: Model) : BorderPane(), View {
             notes.children.add(extra)
         }
     }
-
 }
 
 // add/edit Page
