@@ -65,6 +65,7 @@ class AddEditNoteView(val stage: Stage, val model: Model, note: Note, val isNew:
         content.isWrapText = true
         content.prefRowCount = 35
         content.prefColumnCount = 30
+        content.text = note.content
 
         content.style = """
             -fx-control-inner-background: #F5F5DC;
@@ -80,6 +81,7 @@ class AddEditNoteView(val stage: Stage, val model: Model, note: Note, val isNew:
             note.tags = mutableListOf(tag.text)
             note.content = content.text
             model.save(note)
+            stage.close()
         }
         save.style = """
             .text-area {

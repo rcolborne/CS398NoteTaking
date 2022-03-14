@@ -12,13 +12,19 @@ class Model {
     fun loadNotes(path : String) {
         for(file in File(path).listFiles()) {
             if(file.name.endsWith(".json")) {
-                notes.add(Json.decodeFromString(file.readText(Charsets.UTF_8)))
+                val note : Note = Json.decodeFromString(file.readText(Charsets.UTF_8))
+                if (!notes.map{ it.id }.contains( note.id )) {
+                    notes.add(note)
+                }
             }
         }
+        updateViews()
     }
 
     fun save(note : Note) {
         File("${note.title}.json").writeText(Json.encodeToString(note))
+        loadNotes("./")
+//        updateViews()
     }
 
     fun search(query : String) : MutableList<Note> {
@@ -49,9 +55,9 @@ class Model {
         updateViews()
     }
 
-    fun fetch(title: String) : Note? {
+    fun fetch(id: Int) : Note? {
         for (note in notes) {
-            if (note.title == title) {
+            if (note.id == id) {
                 return note
             }
         }
