@@ -9,7 +9,7 @@ import javafx.scene.paint.Color
 import javafx.scene.paint.Paint
 import javafx.scene.text.Text
 import javafx.stage.Stage
-import speech_to_text.Sample
+import speech_to_text.SpeechToText
 
 
 class Controller
@@ -109,7 +109,7 @@ class AddEditNoteView(val stage: Stage, val model: Model, note: Note, val isNew:
             }
         """.trimIndent()
         val speechToTextButton = Button("Speech To Text")
-        speechToTextButton.style = """        
+        speechToTextButton.style = """
               * {
            -fx-font-family: "Quicksand";
            -fx-font-size: 19;
@@ -132,7 +132,7 @@ class AddEditNoteView(val stage: Stage, val model: Model, note: Note, val isNew:
         cancel.minHeight = 90.0
         speechToTextButton.minHeight = 90.0
         speechToTextButton.setOnAction {
-            Sample.call()
+            content.text += SpeechToText.listen()
         }
 
         titleConstantView.style = """
