@@ -1,5 +1,3 @@
-package View
-
 class Style {
     companion object {
         val webViewStyle = """

@@ -1,4 +1,4 @@
-import View.Style
+import Style
 import javafx.geometry.Insets
 import javafx.geometry.Pos
 import javafx.scene.control.*

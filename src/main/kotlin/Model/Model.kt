@@ -3,6 +3,7 @@ import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.encodeToString
 import java.io.File
+import java.lang.Integer.max
 
 class Model {
     var notes : MutableList<Note> = mutableListOf()
@@ -18,6 +19,8 @@ class Model {
                 }
             }
         }
+
+        Note.ID = if (Note.ID == 0) 0 else notes.map{ it.id }.maxOf{ it } + 1
         updateViews()
     }
 
