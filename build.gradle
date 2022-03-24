@@ -35,6 +35,8 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2'
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
     testImplementation 'org.jetbrains.kotlin:kotlin-test-junit'
+    implementation group: 'org.openjfx', name: 'javafx-web', version: '13.0.1' //Thanks for using https://jar-download.com
+    implementation 'com.sun.webkit:webview-deps:1.3.2'
 }
 
 application {
@@ -44,7 +46,7 @@ application {
 javafx {
     // JavaFX 17 requires Java JDK 16+
     version = "17.0.1"
-    modules = ['javafx.controls', 'javafx.fxml', 'javafx.graphics', 'javafx.media']
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.graphics', 'javafx.media', 'javafx.web']
 }
 
 compileKotlin {

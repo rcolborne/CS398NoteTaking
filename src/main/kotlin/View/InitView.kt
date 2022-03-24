@@ -64,6 +64,7 @@ class InitView(val model: Model) : BorderPane(), View {
             secondaryStage.scene = Scene(AddEditNoteView(secondaryStage, model, note))
             secondaryStage.minWidth = 800.0
             secondaryStage.minHeight = 600.0
+            secondaryStage.isResizable = false
             secondaryStage.show()
         }
     }
@@ -73,7 +74,7 @@ class InitView(val model: Model) : BorderPane(), View {
         notes.children.add(addNote)
         for (note in model.notes) {
             val extraNote = model.fetch(note.id)!!
-            val extra = NoteCellView(note.title, note.tags!!, note!!.content);
+            val extra = NoteCellView(note.title, note.tags!!, note.content);
             extra.setOnMouseClicked {
                 val secondaryStage = Stage()
                 secondaryStage.scene = Scene(AddEditNoteView(secondaryStage, model, extraNote, false))

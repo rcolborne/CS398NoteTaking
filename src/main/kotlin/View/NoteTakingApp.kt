@@ -27,5 +27,7 @@ class NoteTakingApp : Application() {
         primaryStage.show()
 
         model.views.add(0, root)
+        model.loadNotes("./")
+        model.updateViews()
     }
 }
