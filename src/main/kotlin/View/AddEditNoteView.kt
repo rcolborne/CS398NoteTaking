@@ -178,6 +178,7 @@ class AddEditNoteView(val stage: Stage, val model: Model, val note: Note, val is
            -fx-text-fill: #DAA520;
         }""".trimIndent()
 
+
         cancel.setOnMouseClicked {
             stage.close()
         }
@@ -239,7 +240,8 @@ class AddEditNoteView(val stage: Stage, val model: Model, val note: Note, val is
         compile.minHeight = 90.0
         speechToTextButton.minHeight = 90.0
         speechToTextButton.setOnAction {
-            content.text += SpeechToText.listen()
+            val currentPosition = content.caretPosition
+            content.insertText(currentPosition, SpeechToText.listen())
         }
 
         titleConstantView.style = """

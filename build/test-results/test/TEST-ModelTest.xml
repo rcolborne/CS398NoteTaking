@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ModelTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-04-04T19:44:11" hostname="v1040-wn-rt-b-31-19.campus-dynamic.uwaterloo.ca" time="0.144">
+  <properties/>
+  <testcase name="testModel" classname="ModelTest" time="0.088"/>
+  <testcase name="testModel2" classname="ModelTest" time="0.012"/>
+  <testcase name="testModel3" classname="ModelTest" time="0.014"/>
+  <testcase name="testModel4" classname="ModelTest" time="0.009"/>
+  <testcase name="testModel5" classname="ModelTest" time="0.008"/>
+  <testcase name="testModel6" classname="ModelTest" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

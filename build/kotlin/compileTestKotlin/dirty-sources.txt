@@ -1,0 +1,2 @@
+/Users/brianseo/IdeaProjects/cs398NoteTaking/src/test/kotlin/NoteTest.kt
+/Users/brianseo/IdeaProjects/cs398NoteTaking/src/test/kotlin/ModelTest.kt
