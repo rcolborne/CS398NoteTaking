@@ -8,7 +8,7 @@ import javafx.scene.layout.*
 import javafx.scene.paint.Color
 import javafx.scene.text.Text
 import javafx.stage.Stage
-import speech_to_text.SpeechToText
+//import speech_to_text.SpeechToText
 
 import javafx.scene.web.WebView;
 import javafx.stage.FileChooser
@@ -241,7 +241,7 @@ class AddEditNoteView(val stage: Stage, val model: Model, val note: Note, val is
         speechToTextButton.minHeight = 90.0
         speechToTextButton.setOnAction {
             val currentPosition = content.caretPosition
-            content.insertText(currentPosition, SpeechToText.listen())
+            content.insertText(currentPosition, "SpeechToText.listen()")
         }
 
         titleConstantView.style = """
